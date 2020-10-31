@@ -25,7 +25,9 @@ Installing an egg with Pterodactyl is pretty easy:
 
 6. After pressing the "Import" button, you should now have successfully imported the egg into your panel. You should now be able to deploy a server with this egg.
 
+
 When deploying a server using this egg (Or configuring one), you are given 2 configuration options:
+
 **Discordia Lua File**
 Each Discordia bot is different, and there is a wide range of standards for what the core file of your Discorida app should be called. This configuration option lets you input the name of the lua file that luvit should target when attempting to start the bot.
 
