@@ -9,19 +9,19 @@ Installing an egg with Pterodactyl is pretty easy:
 1. First you should download the [egg-discordia.json](https://github.com/owainjones74/egg-discordia/blob/main/egg-discordia.json) file.
 2. Next go to your Pterodactyl admin panel and navigate to nests at the bottom.
 
-![.](https://i.notgyazo.club/EOE1rAQi5.png)
+![.](https://raw.githubusercontent.com/owainjones74/egg-discordia/main/media/nests.png)
 
 3. If you've not already, you will need to make a nest for the egg to go in. You can make a next by pressing the "Create New" button on the right side.
 
-![.](https://i.notgyazo.club/OdNYYNSlg.png)
+![.](https://raw.githubusercontent.com/owainjones74/egg-discordia/main/media/nests-create.png)
 
 4. Now you've made your next, you can press the "Import Egg" button on the right side.
 
-![.](https://i.notgyazo.club/xdmyWWsOc.png)
+![.](https://raw.githubusercontent.com/owainjones74/egg-discordia/main/media/egg-import.png)
 
 5. Upload the [egg-discordia.json](https://github.com/owainjones74/egg-discordia/blob/main/egg-discordia.json) file you downloaded in step 1 in the "Egg File" input and select the nest you made in step 3 as your "Associated Nest".
 
-![.](https://i.notgyazo.club/jDxYJxOTX.png)
+![.](https://raw.githubusercontent.com/owainjones74/egg-discordia/main/media/egg-import2.png)
 
 6. After pressing the "Import" button, you should now have successfully imported the egg into your panel. You should now be able to deploy a server with this egg.
 
