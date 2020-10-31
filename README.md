@@ -2,7 +2,7 @@
 An attempt to provide support for the Discord API wrapper Discorida: https://github.com/SinisterRectus/Discordia
 
 # Warning:
-I don't have much experience in this kind of thing and mostly just blindly dug through Discord messages from the Pterodactly Discord and read up on how other eggs work. There is very likely poor practice inside this. If you have more experience with this kind of thing I highly encourage you to make a pull request with improvements. Specifically I'm not too happy with having the ''lit install {{SERVER_DEPS}};'' in the startup command line and would much rather have it be done a better way.
+I don't have much experience in this kind of thing and mostly just blindly dug through Discord messages from the Pterodactly Discord and read up on how other eggs work. There is very likely poor practice inside this. If you have more experience with this kind of thing I highly encourage you to make a pull request with improvements. Specifically I'm not too happy with having the `lit install {{SERVER_DEPS}};` in the startup command line and would much rather have it be done a better way.
 
 # Installation & Configuration:
 Installing an egg with Pterodactyl is pretty easy:
