@@ -34,7 +34,7 @@
         },
         {
             "name": "Lit Packages",
-            "description": "By default Discordia and sqlite3 are installed, here you can list more dependencies to be installed with them.",
+            "description": "By default Discordia and sqlite3 are installed, here you can list more dependencies to be installed with them. Ensure you seperate them with spaces!",
             "env_variable": "SERVER_DEPS",
             "default_value": "SinisterRectus\/sqlite3",
             "user_viewable": true,
