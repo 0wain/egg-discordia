@@ -1,0 +1,45 @@
+{
+    "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PTERODACTYL PANEL - PTERODACTYL.IO",
+    "meta": {
+        "version": "PTDL_v1"
+    },
+    "exported_at": "2020-10-31T09:35:07-04:00",
+    "name": "Discordia Test",
+    "author": "owain.jones74@gmail.com",
+    "description": "An attempt to provide support for the Discord API wrapper Discorida: https:\/\/github.com\/SinisterRectus\/Discordia",
+    "image": "quay.io\/parkervcp\/pterodactyl-images:debian_luvit",
+    "startup": "luvit {{SERVER_LUAFILE}};",
+    "config": {
+        "files": "{}",
+        "startup": "{\r\n    \"done\": \" : Received READY\"\r\n}",
+        "logs": "{}",
+        "stop": "^C"
+    },
+    "scripts": {
+        "installation": {
+            "script": "#!\/bin\/bash\r\n# Discordia Discord Bot Installation Script\r\n#\r\n# Server Files: \/mnt\/server\r\napt update\r\napt install -y jq curl\r\n\r\n# Set-Up\r\necho \"Starting Set-Up\"\r\nmkdir -p \/mnt\/server\r\ncd \/mnt\/server\r\necho \"Set-Up Complete\"\r\n\r\n# Install Requirements\r\necho \"Installing Requirements\"\r\ncurl -L https:\/\/github.com\/luvit\/lit\/raw\/master\/get-lit.sh | sh\r\n.\/lit install SinisterRectus\/discordia\r\n.\/lit install ${SERVER_DEPS}\r\necho \"Requirements Installed\"",
+            "container": "debian:buster-slim",
+            "entrypoint": "bash"
+        }
+    },
+    "variables": [
+        {
+            "name": "Discordia Lua File",
+            "description": "The file that you want luvit to run to initiate everything. This will likely be called something like: init.lua, index.lua, loader.lua, main.lua ect...",
+            "env_variable": "SERVER_LUAFILE",
+            "default_value": "init.lua",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:60"
+        },
+        {
+            "name": "Lit Packages",
+            "description": "By default Discordia and sqlite3 are installed, here you can list more dependencies to be installed with them.",
+            "env_variable": "SERVER_DEPS",
+            "default_value": "SinisterRectus\/sqlite3",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string"
+        }
+    ]
+}
