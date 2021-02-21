@@ -8,7 +8,7 @@
     "author": "owain.jones74@gmail.com",
     "description": "An attempt to provide support for the Discord API wrapper Discorida: https:\/\/github.com\/SinisterRectus\/Discordia",
     "image": "quay.io\/parkervcp\/pterodactyl-images:debian_luvit",
-    "startup": "lit install {{SERVER_DEPS}}; luvit {{SERVER_LUAFILE}};",
+    "startup": "luvit {{SERVER_LUAFILE}};",
     "config": {
         "files": "{}",
         "startup": "{\r\n    \"done\": \" : Received READY\"\r\n}",
