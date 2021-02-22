@@ -15,7 +15,7 @@ Installing an egg with Pterodactyl is pretty easy:
 
 ![.](https://raw.githubusercontent.com/owainjones74/egg-discordia/main/media/nests-create.png)
 
-4. Now you've made your next, you can press the "Import Egg" button on the right side.
+4. Now you've made your nest, you can press the "Import Egg" button on the right side.
 
 ![.](https://raw.githubusercontent.com/owainjones74/egg-discordia/main/media/egg-import.png)
 
